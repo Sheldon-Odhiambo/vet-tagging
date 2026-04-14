@@ -6,8 +6,7 @@ import { Dashboard } from './pages/Dashboard';
 import { Campaigns } from './pages/Campaigns';
 import { Patients } from './pages/Patients';
 import { CampaignSetup } from './pages/CampaignSetup';
-import { CampaignArchitect } from './pages/CampaignArchitect';
-import { Reports } from './pages/Reports';
+import { CampaignArchive } from './pages/CampaignArchive';
 import { Team } from './pages/Team';
 import { SettingsPage } from './pages/SettingsPage';
 
@@ -25,8 +24,7 @@ export default function App() {
               <Route path="/campaigns" element={<Campaigns />} />
               <Route path="/patients" element={<Patients />} />
               <Route path="/campaign-setup" element={<CampaignSetup />} />
-              <Route path="/campaign-architect" element={<CampaignArchitect />} />
-              <Route path="/reports" element={<Reports />} />
+              <Route path="/campaign-archive" element={<CampaignArchive />} />
               <Route path="/team" element={<Team />} />
               <Route path="/settings" element={<SettingsPage />} />
             </Routes>

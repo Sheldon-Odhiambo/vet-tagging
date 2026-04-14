@@ -5,9 +5,9 @@ import { cn } from '../../lib/utils';
 const menuItems = [
   { name: 'Campaign Setup', icon: ClipboardList, path: '/campaign-setup' },
   { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
+  { name: 'Campaign Archive', icon: FileText, path: '/campaign-archive' },
   { name: 'Patient Database', icon: PawPrint, path: '/patients' },
   { name: 'Team', icon: Users, path: '/team' },
-  { name: 'Reports', icon: BarChart3, path: '/reports' },
 ];
 
 export function Sidebar() {

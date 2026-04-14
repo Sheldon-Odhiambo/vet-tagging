@@ -1,4 +1,4 @@
-import { Target, Users, Briefcase, CheckCircle, MapPin, Clock, AlertCircle, ArrowRight, Plus, TrendingUp } from 'lucide-react';
+import { Target, Users, Briefcase, CheckCircle, MapPin, Clock, AlertCircle, ArrowRight, Plus, TrendingUp, PawPrint, Syringe } from 'lucide-react';
 
 export function Dashboard() {
   return (
@@ -20,7 +20,9 @@ export function Dashboard() {
             <p className="text-3xl font-bold text-blue-950">1,284</p>
             <p className="text-xs text-green-700 font-medium mt-1 flex items-center gap-1"><TrendingUp className="w-3 h-3" /> 12% from last week</p>
           </div>
-          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-xl">🐾</div>
+          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-blue-900">
+            <PawPrint className="w-6 h-6" />
+          </div>
         </div>
         <div className="bg-white p-4 rounded-xl border border-gray-200 flex justify-between items-center">
           <div>
@@ -28,7 +30,9 @@ export function Dashboard() {
             <p className="text-3xl font-bold text-blue-950">2,410</p>
             <p className="text-xs text-blue-700 font-medium mt-1 flex items-center gap-1"><CheckCircle className="w-3 h-3" /> Daily Target Reached</p>
           </div>
-          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-xl">💉</div>
+          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-blue-900">
+            <Syringe className="w-6 h-6" />
+          </div>
         </div>
         <div className="bg-white p-4 rounded-xl border border-gray-200 flex justify-between items-center">
           <div>
@@ -36,7 +40,9 @@ export function Dashboard() {
             <p className="text-3xl font-bold text-blue-950">42</p>
             <p className="text-xs text-gray-600 font-medium mt-1 flex items-center gap-1"><Briefcase className="w-3 h-3" /> 4 Clinics On-site</p>
           </div>
-          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-xl">💼</div>
+          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-blue-900">
+            <Briefcase className="w-6 h-6" />
+          </div>
         </div>
       </div>
 

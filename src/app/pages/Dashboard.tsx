@@ -11,6 +11,10 @@ import {
   Package,
   Stethoscope,
   Power,
+  Activity,
+  Home,
+  AlertCircle,
+  Circle
 } from "lucide-react";
 
 export function Dashboard() {
@@ -182,7 +186,7 @@ export function Dashboard() {
               </div>
             </div>
 
-            {/* Live Activity Feed */}
+            {/* Live Activity Feed - EMOJIS REMOVED */}
             <div>
               <div className="flex justify-between items-end mb-4">
                 <h2 className="text-lg font-bold text-blue-950">Live Activity</h2>
@@ -190,14 +194,16 @@ export function Dashboard() {
               </div>
               <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm space-y-5">
                 {[
-                  { time: "8:40 AM", text: "Patient #124 intake complete", icon: "✅" },
-                  { time: "8:45 AM", text: "Dr. Smith started surgery on #115", icon: "⚕️" },
-                  { time: "8:50 AM", text: "Patient #106 discharged successfully", icon: "🏠" },
-                  { time: "9:20 AM", text: "Station B reported 10 min delay", icon: "⚠️" },
+                  { time: "8:40 AM", text: "Patient #124 intake complete", icon: CheckCircle, color: "text-green-500" },
+                  { time: "8:45 AM", text: "Dr. Smith started surgery on #115", icon: Activity, color: "text-blue-500" },
+                  { time: "8:50 AM", text: "Patient #106 discharged successfully", icon: Home, color: "text-purple-500" },
+                  { time: "9:20 AM", text: "Station B reported 10 min delay", icon: AlertCircle, color: "text-yellow-500" },
                 ].map((act, i) => (
-                  <div key={i} className="flex gap-3 relative">
-                    {i !== 3 && <div className="absolute left-1.5 top-5 bottom-[-20px] w-0.5 bg-gray-100" />}
-                    <span className="text-sm z-10">{act.icon}</span>
+                  <div key={i} className="flex gap-4 relative">
+                    {i !== 3 && <div className="absolute left-2 top-5 bottom-[-20px] w-0.5 bg-gray-100" />}
+                    <div className="z-10 bg-white p-0.5">
+                        <act.icon className={`w-4 h-4 ${act.color}`} />
+                    </div>
                     <div>
                       <p className="text-[10px] font-bold text-gray-400 uppercase leading-none mb-1">{act.time}</p>
                       <p className="text-xs font-medium text-gray-700 leading-tight">{act.text}</p>

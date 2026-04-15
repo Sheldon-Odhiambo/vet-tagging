@@ -30,7 +30,7 @@ export function Dashboard() {
               </span>
             </div>
             <h1 className="text-2xl font-black text-blue-950">
-              City North Rabies Vaccination Drive
+              Kawangware North Rabies Vaccination Drive
             </h1>
             <div className="flex flex-wrap gap-4 mt-2 text-gray-600 text-sm font-medium">
               <span className="flex items-center gap-1">

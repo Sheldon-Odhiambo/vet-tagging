@@ -1,5 +1,6 @@
 {
   "name": "PawCare",
-  "description": "A field console application for veterinary care",
-  "requestFramePermissions": []
+  "description": "A multi-step registration PWA for pet care campaign administrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
 }
